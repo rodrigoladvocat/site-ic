@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    overflow: hidden;
 }
 #infos{
     display: flex;
@@ -15,8 +16,8 @@
     gap: 10px;
 }
 .cabecalho{
-    font-size: large;
-    font-family:fantasy;
+    font-size: medium;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .upper-menu{
@@ -25,6 +26,7 @@
     flex-direction: row;
     align-items: center;
     justify-content:center;
+    width: 100%;
     gap: 8%;
 }
 
@@ -43,7 +45,7 @@
     align-items: center;
     justify-content:center;
     gap:20%;
-    margin-right:15% ;
+    width: 100%;
     
 }
 
@@ -97,4 +99,21 @@
 
 .botao:hover{
     background-color: yellow;
+}
+
+@media (max-width:700px){
+    #bottom-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #texto-introducao{
+        width: 80%;
+    }
+
+    #list{
+        width: 80%;
+    }
 }
