@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+#infos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cabecalho{
+    font-style: italic;
+    font-size: large;
+}
+
+.upper-menu{
+    background-color: rgb(164, 187, 187);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap: 8%;
+}
+
+#foto_perfil{
+    width: 12%;
+    height: 12%;
+    border-style: outset ;
+    border-radius: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#bottom-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap:20%;
+    margin-right:15% ;
+    
+}
+
+#texto-introducao{
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(131, 73, 197);
+    border-style:inset;
+    border-radius: 15px;
+    width: 400px;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.item-lista{
+    background-color: aqua;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    transition:ease-out 2s;
+}
+.item-lista:hover{
+    width: 300px;
+}
