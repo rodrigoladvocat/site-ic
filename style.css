@@ -81,19 +81,22 @@
 
 @keyframes mudar_cor {
     from {background-color: red;}
-    to {background-color: yellow;}
+    to {background-color: blue;}
   }
 
 .botao{
     background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     border-radius: 10px;
-    transition:transform;
-    animation-name: mudar_cor;
-    animation-duration: 4s;
+    transition: 1s;
+    transition-timing-function: linear;
+
 }
 
 .botao:hover{
-    width: 200%;
-    height: 200%;
-    transform: rotate(180deg);
+    width: 200px;
+    background-color: yellow;
 }
