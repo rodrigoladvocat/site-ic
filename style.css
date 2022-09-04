@@ -53,7 +53,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgb(131, 73, 197);
+    background-color: rgb(130, 73, 197);
     border-style:inset;
     border-radius: 15px;
     width: 400px;
@@ -69,17 +69,31 @@
 #list{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     list-style: none;
 }
 
 .item-lista{
-    background-color: aqua;
     text-decoration: none;
     color: black;
-    border-radius: 10px;
-    transition:ease-out 2s;
 }
-.item-lista:hover{
-    width: 300px;
+
+@keyframes mudar_cor {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+.botao{
+    background-color: red;
+    border-radius: 10px;
+    transition:transform;
+    animation-name: mudar_cor;
+    animation-duration: 4s;
+}
+
+.botao:hover{
+    width: 200%;
+    height: 200%;
+    transform: rotate(180deg);
 }
